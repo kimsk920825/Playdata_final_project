@@ -1,0 +1,14 @@
+1. 3번 아래에 있는 코드를 실행시키면 어떤 패키지가 없다고 한다. 설치 -> 이번엔 다른게 없다고 한다 -> 설치 이걸 반복. 이게 안 된다면
+2. 사진에 나와있는 패키지를 직접 설치한다.
+3. 아래의 터미널(콘손 말고)에서 코드를 돌린다.
+ python ./yolov5/detect.py --weights image800_epochs100.pt --conf 0.4 --source 0     이 코드 돌리면 화면 뜨면서 실시간 마스크 착용 여부 감지
+python ./yolov5/detect.py --weights withAugmentation_e150.pt --conf 0.4 --source http://192.168.0.22:8091/?action=stream
+
+코드 별 의미, 주의사항
+./yolov5/detect.py : yolo 클론해서 가져오면 들어있는 파일. 경로만 붙여넣어주면 됩니다. 압축해서 받은 파일에서는  yolov5 폴더 안에 들어있어요.
+image800_epochs100.pt : 훈련시킨 모델의 경로. 압축 푼 폴더인 realtime_detection 폴더 안에 있어요.
+--conf 0.4 : 더 높이면 더 민감하게 가려내는 듯해요. 값은 조정해도 상관없어요.
+--source 0 : 소스를 웹캠으로 받아오기 라고 하더라구요
+
+코드 참조 블로그
+https://jackyoon5737.tistory.com/189
