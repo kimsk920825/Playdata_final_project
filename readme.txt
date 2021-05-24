@@ -31,3 +31,4 @@ python ./yolov5/detect.py --weights withAugmentation_e150.pt --conf 0.4 --source
 프로젝트 실행
 
 개인 코드 nbviewer: https://nbviewer.jupyter.org/gist/kimsk920825/a1fb3a907518ef97d2ea6aae0e4a9d78/%E1%84%80%E1%85%B5%E1%86%B7%E1%84%89%E1%85%B3%E1%86%BC%E1%84%80%E1%85%B2_Model.ipynb
+
